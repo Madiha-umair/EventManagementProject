@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;700&display=swap');
+html {
+  box-sizing:border-box;
+  font-family:'Open Sans',sans-serif;
+  font-weight:300;
+}
+*, *::before, *::after {
+  box-sizing:inherit;
+}
+body {
+  margin:0; 
+}
+h1, h2, h3, h4 {
+  font-family: 'Lato', sans-serif;
+}
+
+/* 2. LAYOUT */
+.flex-container {
+  display:flex;
+  flex-flow:row wrap;
+}
+#site-name {
+  flex:1 0 0;
+  font-family: 'Zilla Slab', serif;
+  font-size: 30px;
+  font: azure;
+}
+#site-name a {
+  text-decoration: none;
+}
+#main-navigation {
+  flex:4 0 0;
+}
+li a {
+  text-decoration: none;
+}
+
+#main-navigation li {
+  display:inline-block;
+  margin-right:2em;
+}
+#header.flex-container {
+  align-items:center; /* flex container property to vertically align flex items to the center */
+}
+#main {
+  flex:3 0 0;
+  padding:1em;
+}
+
+#header{
+  background-color:#b9c559;
+  padding:1em 2em;
+  color:#0e0505;
+}
+#footer{
+  background-color:#b9c559;
+  padding:1em 1em;
+  color:#0e0505;
+  text-align: center;
+}
+a, a:link {
+  color: #ffffff; /* change text color using the color property */
+}
+a:visited {
+  color:#2427c4;
+  
+}
+a:hover {
+  color:#000000;
+}
+/* :active is the state where the mouse button is pressed down
+ * but before releasing the button
+ */
+a:active {
+  color:rgb(12, 12, 12);
+}
+
+
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 160px;
+  right: 500px;
+  color: black;
+  padding-left: 100px;
+  padding-right: 20px;
+}
+
+#category_container{
+    margin:50px;
+    border: 1px solid rgb(207, 194, 194);
+    box-shadow: 5px 10px 18px #888888;
+    display:inline-block;
+}
+#banner_heading{
+  font-family: 'Zilla Slab', serif;
+  font-size: 45px;
+}
+
+#event_name a{
+  text-decoration: none;
+  padding-left:70px; /* for name of the category to align in centre*/
+}
+
+#icons_container{
+  display:inline-block;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 690px;
+}
+
+.form_container{
+  margin:50px;
+  padding:10px;
+  border: 1px solid rgb(207, 194, 194);
+  box-shadow: 5px 10px 18px #888888;
+}
+#form_fields{
+margin-bottom: 20px;
+}
+#about{
+  margin:30px;
+  font-family: 'Zilla Slab', serif;
+  font-size: 20px;
+  font-weight: normal;
+}
