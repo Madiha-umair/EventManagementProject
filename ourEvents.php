@@ -20,7 +20,7 @@ include('admin/includes/functions.php');
 
 <body>
     <header id="header" class="flex-container" >
-      <h2 id="site-name"><a href="/">Crystal Events</a></h2>
+      <h2 id="site-name"><a href="/php-cms-main/">Crystal Events</a></h2>
       <nav id="main-navigation" aria-label="Main navigation">
         <ul class="menu">
           <li><a href="/php-cms-main/">Home</a></li>

@@ -20,7 +20,7 @@ include('admin/includes/functions.php');
 
 <body>
     <header id="header" class="flex-container" >
-      <h2 id="site-name"><a href="/">Crystal Events</a></h2>
+      <h2 id="site-name"><a href="/php-cms-main/">Crystal Events</a></h2>
       <nav id="main-navigation" aria-label="Main navigation">
         <ul class="menu">
           <li><a href="/php-cms-main/">Home</a></li>
@@ -53,12 +53,10 @@ include('admin/includes/functions.php');
   <input type="text" name="last" id="last"  placeholder="Your last name.." >
   </div>
 
-
   <div id=form_fields>
   <label for="email">Email:</label>
   <input type="email" name="email" id="email" placeholder="test@gmail.com" >
   </div>
-
 
   <div id=form_fields>
   <label for="country">Country</label>
@@ -68,12 +66,10 @@ include('admin/includes/functions.php');
   </select>
   </div>
 
-
   <div id=form_fields>
   <label for="subject">Subject</label>
   <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
   </div>
-
 
   <div id=form_fields>
   <input type="submit" value="Submit">
@@ -88,17 +84,15 @@ include('admin/includes/functions.php');
 ?>
 
 <?php while ($recordSocial = mysqli_fetch_assoc($resultSocial)): ?>
-
-
   <?php if ($recordSocial['image']): ?>
-    <img src="<?php echo $recordSocial['image']; ?>"  alt="Social media pictures" width="50" height="50">
+    <a href="<?php echo $recordSocial['url']; ?>"><img src="<?php echo $recordSocial['image']; ?>"  alt="Social media icons" width="50" height="50"></a>
   <?php else: ?>
     <p>This record does not have an image!</p>
   <?php endif; ?>
-
-
 <?php endwhile; ?>
+
 </div>
+
 <footer id="footer">
       <div>&copy; Copyright Madiha_Umair, 2023.</div>
     </footer>
